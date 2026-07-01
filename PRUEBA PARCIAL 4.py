@@ -121,23 +121,6 @@ def main():
             nombre = input("Nombre a buscar: ")
             pos = buscar_paciente(pacientes, nombre)
             if pos == -1:
-                print("No se encontro el paciente")
-            else:
-                p = pacientes[pos]
-                print(f"Posición: {pos}")
-                print(f"Nombre: {p['nombre']}")
-                print(f"Edad: {p['edad']}")
-                print(f"Temperatura: {p['temperatura']}")
-                print(f"Atendido: {p['atendido']}")
-        elif opcion == 3:
-            eliminar_paciente(pacientes)
-        elif opcion == 4:
-            actualizar_estado(pacientes)
-        elif opcion == 5:
-            mostrar_pacientes(pacientes)
-        elif opcion == 6:
-            print("Gracias por usar el sistema Vuelva Pronto")
-            break
 
 
 if __name__ == '__main__':
